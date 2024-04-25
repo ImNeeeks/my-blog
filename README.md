@@ -8,7 +8,7 @@ This is a blog application that utilizes HTML/CSS/JS.
 
 ## Features
 
-- Dark mode / Light mode
+- Dark mode / Light mode (Click the star)
 
 - Landing page with a form with inputs for a username, blog title, blog content.
 
