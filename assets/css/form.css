@@ -114,13 +114,13 @@ input[type="text"]:valid ~ label {
 label {
     transform-origin: left center;
     color: black;
-    font-size: 25px; /* reduce username, title, content */
+    font-size: 25px; /* username, title, content */
     font-weight: 400;
     box-sizing: border-box;
     padding: 25px 10px;
     display: block;
     position: absolute;
-    margin-top: -35px; /* help increase or reduce margin */
+    margin-top: -35px;
     z-index: 2;
     pointer-events: none;
     transition: all 0.25s cubic-bezier(.53,.01,.35,1.5);

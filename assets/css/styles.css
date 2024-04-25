@@ -5,12 +5,11 @@
     --main-color: #f8f7f5;
 }
 
-.darkMode { /* To switch between light and dark mode*/
-    --bg-color: #353434; /* darker background color */
-    --second-bg-color: #383333; /* darker second background color */
+.darkMode {
+    --bg-color: #353434;
+    --second-bg-color: #383333;
     --text-color: #ffffff;
     --main-color: #353434;
-    /* --background-image: var(--background-img-light); */
 } 
 
 body {
@@ -40,7 +39,7 @@ textarea {
     padding: 10px;
     margin-bottom: 5px;
     border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
     font-size: 16px;
     background-color: var(--second-bg-color);
@@ -50,9 +49,9 @@ textarea {
 
 .header {
     background-color: var(--main-color);
-    margin: 1px;
-    padding: 14px;
-    position: relative; /* allow relative positioning for pseudo-element */
+    margin: 10px;
+    padding: 10px;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,13 +61,13 @@ textarea {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -12px; /* adjust this value to control the distance of the border from the header */
+    bottom: -12px;
     width: 100%;
-    border-bottom: 13px double black; /* adjust the double line at the top */
-    z-index: -1; /* make sure it's positioned behind the header content */
+    border-bottom: 20px double black;
+    z-index: -1;
 }
 
-.banner { /* to adjust banner */
+.banner {
     position: relative;
     font-size: 40px;
     color: var(--text-color);
@@ -92,13 +91,13 @@ textarea {
     cursor: pointer;
 }
 
-.center-line { /* adjust the double centerline */
+.center-line {
     position: absolute;
     left: 40%;
     top: 91px;
     bottom: -425px;
     width: 0;
-    border-left: 12px double black; /* adjust thickness and color as required */
+    border-left: 12px double black;
     content: '';
 }
 
@@ -116,7 +115,6 @@ textarea {
     width: 100%;
     text-align: center;
     flex-wrap: wrap;
-    /* min-height: calc(80vh - 80px); */
 }
 
 .display-img {

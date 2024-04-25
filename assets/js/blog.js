@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function displayBlogPosts() {
-        blogList.innerHTML = "";
+        blogList.innerHTML = ""; // Clears out previous posts
 
         const blogPosts = getBlogPostsFromLocalStorage();
         blogPosts.forEach((post, index) => {
@@ -52,9 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function removeBlogPost(index) {
         const blogPosts = getBlogPostsFromLocalStorage();
-        blogPosts.splice(index, 1);
+        blogPosts.splice(index, 1); // Remove blog post from specified index
         localStorage.setItem("posts", JSON.stringify(blogPosts));
-        displayBlogPosts();
+        displayBlogPosts(); // Refreshes the display after post is removed 
     }
 
     displayBlogPosts();
